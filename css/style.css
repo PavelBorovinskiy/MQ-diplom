@@ -1,1 +1,57 @@
-dasdasdas
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Regular.woff2');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: #000;
+    /* background: url('/images/banner-bg-tablet.jpg') center center no-repeat; */
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.logo-icon {
+    width: 180px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-text {
+    font-size: 50.455px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.667;
+    text-align: center;
+    -moz-transform: matrix( 0.89112658082951, -0.00117745656185, 0.00034460930939, 0.89189022727576, 0, 0);
+    -webkit-transform: matrix( 0.89112658082951, -0.00117745656185, 0.00034460930939, 0.89189022727576, 0, 0);
+    -ms-transform: matrix( 0.89112658082951, -0.00117745656185, 0.00034460930939, 0.89189022727576, 0, 0);
+}
