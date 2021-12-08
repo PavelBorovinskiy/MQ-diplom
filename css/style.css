@@ -1,18 +1,40 @@
 @font-face {
-    font-family: 'Open Sans';
-    src: url('/fonts/OpenSans-Regular.woff2');
+    font-family: 'Open-Sans';
+    src: url('https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff');
+    font-weight: normal;
 }
 
-body {
+@font-face {
+    font-family: 'Open-Sans';
+    src: url('https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff');
+    font-weight: bold;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open-Sans', sans-serif;
 }
 
 .header {
     background: #000;
-    /* background: url('/images/banner-bg-tablet.jpg') center center no-repeat; */
+    background: url('/images/banner-bg.jpg') center center no-repeat;
     background-size: cover;
+    position: relative;
+    max-width: 100%;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+    z-index: 1;
 }
 
 .container {
@@ -21,34 +43,55 @@ body {
     padding: 0 15px;
 }
 
+.header-wrap {
+    position: relative;
+    z-index: 2;
+}
+
 .header-nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 27px;
+    padding-bottom: 91px;
 }
 
 .logo-icon {
     width: 180px;
+    margin-left: 3px;
 }
 
 .nav-list {
     display: flex;
+    align-items: center;
     list-style: none;
+    text-transform: uppercase;
+    margin-right: -34px;
 }
 
-.nav-item {}
+.nav-item {
+    padding-right: 34px
+}
 
 .nav-link {
     text-decoration: none;
     color: #fff;
+    font-size: 13px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.header-title {
+    padding-bottom: 118px;
 }
 
 .header-text {
     font-size: 50.455px;
     font-family: "Open Sans";
     color: rgb(255, 255, 255);
-    font-weight: bold;
     text-transform: uppercase;
+    font-weight: bold;
     line-height: 1.667;
     text-align: center;
     -moz-transform: matrix( 0.89112658082951, -0.00117745656185, 0.00034460930939, 0.89189022727576, 0, 0);
