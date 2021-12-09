@@ -19,6 +19,7 @@
 
 .header {
     background: #000;
+    background: url("images/banner-bg.jpg") center no-repeat;
     background: url("../images/banner-bg.jpg") center no-repeat;
     background-size: cover;
     position: relative;
