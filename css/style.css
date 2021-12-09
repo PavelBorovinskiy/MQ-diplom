@@ -22,7 +22,6 @@
     background: url("../images/banner-bg.jpg") center no-repeat;
     background-size: cover;
     position: relative;
-    max-width: 100%;
     margin-bottom: 65px;
 }
 
