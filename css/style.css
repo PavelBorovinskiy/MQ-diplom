@@ -96,9 +96,6 @@
     font-weight: bold;
     line-height: 1.667;
     text-align: center;
-    -moz-transform: matrix( 0.89112658082951, -0.00117745656185, 0.00034460930939, 0.89189022727576, 0, 0);
-    -webkit-transform: matrix( 0.89112658082951, -0.00117745656185, 0.00034460930939, 0.89189022727576, 0, 0);
-    -ms-transform: matrix( 0.89112658082951, -0.00117745656185, 0.00034460930939, 0.89189022727576, 0, 0);
 }
 
 .category {
@@ -126,24 +123,86 @@
 }
 
 .trend {
+    display: flex;
     margin-bottom: 65px;
 }
 
-.trend-content {
-    width: 100%;
+.trend-bg {
+    background: #000;
+    background: url('images/trend1.jpg') center center no-repeat;
+    background: url('../images/trend1.jpg') center center no-repeat;
+    background-size: cover;
+    width: 25%;
+    height: 320px;
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 0 24px 16px;
+    margin-right: 5px;
+    position: relative;
 }
 
-.trend-img {
-    flex: 1 1 calc(25% - 5px);
-    margin-left: 5px;
+.trend-bg:last-child {
+    margin-right: 0;
 }
 
-.trend-img:first-child {
-    margin-left: 0px;
+.trend-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    z-index: 1;
 }
 
-.trend-img img {
+.ternd-content {
     width: 100%;
+    height: 150px;
+    padding: 40px 32px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(181, 159, 91);
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0.6;
+}
+
+.trend-wrap {
+    position: relative;
+    z-index: 2;
+}
+
+.trend-menu {}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-item {
+    margin-right: 20px;
+}
+
+.menu-link {
+    text-decoration: none;
+    font-size: 15.697px;
+    font-family: "Open Sans";
+    color: rgb(181, 159, 91);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.857;
+}
+
+.trent-text {}
+
+.trend-link {
+    font-size: 22.424px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-decoration: none;
 }
